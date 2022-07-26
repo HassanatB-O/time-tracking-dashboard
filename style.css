@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(226, 43%, 10%);
+}
+#container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 20px;
+    width: 70%;
+}
+h1{
+    font-size: 30px;
+    font-weight: 300;
+}
+/* Profile */
+#profile-top{
+    background-color: hsl(246, 80%, 60%);
+    padding: 20px;
+    border-radius: 20px;
+}
+#profile-top p{
+    color: hsl(236, 100%, 87%);
+    margin-top: 15px;
+    font-weight: 500;
+}
+#daily, #weekly, #monthly{
+    cursor: pointer;
+}
+#daily:active, #weekly:active, #monthly:active{
+    color: hsl(0, 0%, 100%);
+}
+#daily:hover, #weekly:hover, #monthly:hover{
+    color: hsl(0, 0%, 100%);
+}
+#profile-top h1{
+    margin-top: 7px;
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+#profile-bottom{
+    background-color: hsl(235, 46%, 20%);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    margin-top: -10px;
+}
+#profile-bottom p{
+    color: hsl(235, 45%, 61%);
+    margin-top: 15px;
+}
+#image{
+    width: 70px;
+    height: 70px;
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+/* Profile */
+
+/* Activity Log */
+#work, #exercise, #play, #self-care, #study, #social{
+    background-color: hsl(235, 46%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    clear: right;
+    border-radius: 8px;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+#icon-ellipsis{
+    height: 7px;
+    width: 25px;
+    margin-top: 5px;
+}
+h3{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#current-time{
+    color: hsl(235, 45%, 61%);
+    margin-top: 10px;
+}
+#icon{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 5px;
+    padding: 5px;
+}
+#work-section{
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 10px;
+}
+#play-section{
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 10px;
+}
+#study-section{
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#exercise-section{
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#social-section{
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 10px;
+}
+#self-section{
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* Activity Log */
+
+@media screen and (max-width: 450px){
+    #container{
+        grid-template-columns: 1fr;
+        width: 80%;
+        padding: 20px;
+    }
+    #profile-top{
+        display: flex;
+    }
+    #profile-bottom, #text{
+        display: flex;
+        justify-content: space-between;
+    }
+    #profile-top h1{
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-size: 25px;
+    }
+}
