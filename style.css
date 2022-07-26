@@ -16,7 +16,7 @@ body{
     width: 70%;
 }
 h1{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 300;
 }
 /* Profile */
@@ -70,6 +70,10 @@ h1{
     padding: 20px;
     clear: right;
     border-radius: 8px;
+    cursor: pointer;
+}
+#work:hover, #exercise:hover, #play:hover, #self-care:hover, #study:hover, #social:hover{
+    background-color: hsl(234, 45%, 32%);
 }
 #header{
     display: flex;
@@ -79,6 +83,7 @@ h1{
     height: 7px;
     width: 25px;
     margin-top: 5px;
+    cursor: pointer;
 }
 h3{
     font-weight: 400;
@@ -137,9 +142,12 @@ h3{
         display: flex;
         justify-content: space-between;
     }
+    h1{
+        font-size: 25px;
+    }
     #profile-top h1{
         margin-bottom: 10px;
         margin-top: 0;
-        font-size: 25px;
+        font-size: 23px;
     }
 }
