@@ -75,11 +75,11 @@ h1{
 #work:hover, #exercise:hover, #play:hover, #self-care:hover, #study:hover, #social:hover{
     background-color: hsl(234, 45%, 32%);
 }
-#header{
+.header{
     display: flex;
     justify-content: space-between;
 }
-#icon-ellipsis{
+.icon-ellipsis{
     height: 7px;
     width: 25px;
     margin-top: 5px;
@@ -89,11 +89,11 @@ h3{
     font-weight: 400;
     margin-bottom: 10px;
 }
-#current-time{
+.current-time{
     color: hsl(235, 45%, 61%);
     margin-top: 10px;
 }
-#icon{
+.icon{
     width: 40px;
     height: 40px;
     float: right;
@@ -138,7 +138,7 @@ h3{
     #profile-top{
         display: flex;
     }
-    #profile-bottom, #text{
+    #profile-bottom, .text{
         display: flex;
         justify-content: space-between;
     }
