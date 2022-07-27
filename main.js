@@ -1,8 +1,8 @@
-let activityText = document.querySelectorAll("#activity")
+let activityText = document.querySelectorAll(".activity")
 let timeSpan = document.getElementById("profile-bottom")
 let timeChange = timeSpan.getElementsByTagName("p")
-let prevTime = document.querySelectorAll("#previous-time")
-let currentTime = document.querySelectorAll("#current-time")
+let prevTime = document.querySelectorAll(".previous-time")
+let currentTime = document.querySelectorAll(".current-time")
 
 const timeData = fetch("./data.json")
     .then(response =>{
